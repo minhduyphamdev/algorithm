@@ -4,36 +4,39 @@
 import java.util.Scanner;
 
 public class LongestPalindromicString {
-  public int getPalindromeLength(String s, int start, int end, int len) {
-    while(start>=0 && end < len && s.charAt(start) == s.charAt(end)) {
-      start--;
-      end++;
-    }
-
-    return end - start -1;
-  }
   public String longestPalindrome(String s) {
-    if (s == null || s.length() <= 1) {
-      return s;
+    if(s.length() <=1) {
+        return s;
     }
 
-    String longestString = "";
-    int len = s.length();
-
-    for(int i=0;i<=len-1;i++) {
-      int lenOfPalindromeCase1 = getPalindromeLength(s,i,i,len);
-      int lenOfPalindromeCase2 = getPalindromeLength(s,i,i+1,len);
-      int maxLen = Math.max(lenOfPalindromeCase1, lenOfPalindromeCase2);
-
-      if(maxLen > longestString.length()) {
-        int start = i-(maxLen-1) /2 ;
-        int end = i+ maxLen / 2;
-        longestString = s.substring(start, end+1);
-      }
+    int maxLen = 1;
+    String longestStr = s.charAt(0)+"";
+    for(int i=0;i<s.length();i++) {
+        for(int j=i+maxLen;j<=s.length();j++) {
+         if(j-i > maxLen && isPalindrome(s.substring(i,j))) {
+             maxLen = j-i;
+             longestStr = s.substring(i,j);
+         }
+        }
     }
 
-    return longestString;
-  }
+    return longestStr;
+}
+
+public boolean isPalindrome(String s) {
+    int left = 0;
+    int right = s.length() -1;
+
+    while(left<right) {
+        if(s.charAt(left) != s.charAt(right)) {
+           return false;
+        }
+        left ++;
+        right --;
+    }
+
+ return true;
+}
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

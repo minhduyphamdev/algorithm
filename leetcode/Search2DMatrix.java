@@ -57,6 +57,40 @@ public class Search2DMatrix {
     return false;
   }
 
+//   public boolean searchMatrix(int[][] matrix, int target) {
+//     int row =0;
+//     int col = 0;
+//     int m = matrix.length;
+//     int n = matrix[0].length;
+
+//     while(row<m && col <n) {
+//         int midRow = row+(m-row) /2;
+//         int midCol = col + (n-col) /2;
+
+//         if(matrix[midRow][midCol] == target) {
+//             return true;
+//         }
+//         else if(matrix[midRow][midCol] < target) {
+//             if(matrix[midRow][matrix[0].length-1] < target) {
+//                 row++;
+//             }
+//             else {
+//                col++;
+//             }
+//         }
+//         else {
+//             if(matrix[midRow][0] > target) {
+//                 m--;
+//             }
+//             else {
+//                 n--;
+//             }
+//         }
+//     }
+
+//     return false;
+// }
+
   public static void main(String[] args) {
     Search2DMatrix obj = new Search2DMatrix();
     int[][] matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
