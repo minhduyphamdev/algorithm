@@ -21,5 +21,7 @@ public class ThreeSumClosest {
       }
       
     }
+
+    return 0;
   }
 }

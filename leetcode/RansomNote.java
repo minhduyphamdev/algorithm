@@ -14,6 +14,6 @@ public class RansomNote {
     }
 
     
-  
+    return true;
   }
 }

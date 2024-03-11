@@ -17,7 +17,7 @@ public class FractionToDecimal {
     }
     long num = (long) numerator;
     long den = (long) denominator;
-    long quotient = num / den;
+   long quotient = num / den;
     long remainder = num % den;
     res.append(quotient);
     if(remainder == 0) {
