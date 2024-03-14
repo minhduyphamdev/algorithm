@@ -1,5 +1,9 @@
 public class MinimumPathSum {
   public int minPathSum(int[][] grid) {
+    if(grid == null) {
+      return 0;
+    }
+
     int m = grid.length;
     int n = grid[0].length;
     
