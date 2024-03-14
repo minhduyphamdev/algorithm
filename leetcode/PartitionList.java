@@ -2,7 +2,6 @@ public class PartitionList {
   public ListNode partition(ListNode head, int x) {
     ListNode dummy = new ListNode(0), slow = dummy, fast = head;
     dummy.next = head;
-    boolean findLarger = false;
     ListNode large = null;
     while(fast!=null) {
       if(fast.val>=x && large == null) {
