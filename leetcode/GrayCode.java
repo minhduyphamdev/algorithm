@@ -8,15 +8,15 @@ public class GrayCode {
   //   return xor != 0 && (xor & (xor - 1)) == 0;
   // }
   
-  Set<Integer> isContain;
+  // Set<Integer> isContain;
 
-  public List<Integer> grayCode(int n) {
-    List<Integer> res = new ArrayList<>(Arrays.asList(0));
-    isContain = new HashSet<>();
-    isContain.add(0);
-    generateGrayCode(res, n);
-    return res;
-  }
+  // public List<Integer> grayCode(int n) {
+  //   List<Integer> res = new ArrayList<>(Arrays.asList(0));
+  //   isContain = new HashSet<>();
+  //   isContain.add(0);
+  //   generateGrayCode(res, n);
+  //   return res;
+  // }
 
   // public boolean generateGrayCode(List<Integer> res, int n) {
   //   if(res.size() == (1<<n)) {
@@ -40,24 +40,25 @@ public class GrayCode {
   // }
 
   public List<Integer> grayCode(int n) {
-    List<Integer> result = new ArrayList<>(Arrays.asList(0));
-    for (int i = 0; i < n; ++i) {
-      List<Integer> res1 = result;
-      List<Integer> res2 = new ArrayList<>(res1);
-      Collections.reverse(res2);
-      // prepend "1"
-      int prependVal = (1 << i);
-      for (int j = 0; j < res2.size(); ++j) {
-        res2.set(j, res2.get(j) + prependVal);
+    List<Integer> res = new ArrayList<>(Arrays.asList(0));
+    for(int i=0;i<n;i++) {
+      List<Integer> temp = new ArrayList<>(res);
+      Collections.reverse(temp);
+      int plus = 1 << i;
+
+      for(int j=0;j<temp.size();j++) {
+        temp.set(j,temp.get(j) + plus);
       }
-      res1.addAll(res2);
+      
+      res.addAll(temp);
     }
-    return result;
+
+    return res;
   }
 
   public static void main(String[] args) {
     GrayCode gc = new GrayCode();
-    List<Integer> result = gc.grayCode(2);
+    List<Integer> result = gc.grayCode(3);
     for (int code : result) {
       System.out.println(code);
     }
