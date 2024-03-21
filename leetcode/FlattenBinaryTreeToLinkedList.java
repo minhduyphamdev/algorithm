@@ -29,18 +29,18 @@ public class FlattenBinaryTreeToLinkedList {
 
   private TreeNode prev = null;
 
-  private void flatten(TreeNode root) {
-    if(root == null) {
-      return;
+    private void flatten(TreeNode root) {
+      if(root == null) {
+        return;
+      }
+
+      flatten(root.right);
+      flatten(root.left);
+
+      root.right = prev;
+      root.left = null;
+      prev = root;
     }
-
-    flatten(root.right);
-    flatten(root.left);
-
-    root.right = prev;
-    root.left = null;
-    prev = root;
-  }
 
   public static void main(String[] args) {
     FlattenBinaryTreeToLinkedList obj = new FlattenBinaryTreeToLinkedList();
