@@ -1,17 +1,22 @@
 public class RootToLeafNumbers {
-
+   int totalSum = 0;
   public int sumNumbers(TreeNode root) {
-      return sumToLeaf(root, 0);
+    
+    sumToLeaf(root, "");
+    return totalSum;
   }
 
-  public int sumToLeaf(TreeNode node, int currSum) {
-      if (node == null) {
-          return 0;
-      }
-      
-      if(node.left == null && node.right == null) return currSum*10 + node.val;
-
-      return sumToLeaf(node.left, currSum) + sumToLeaf(node.right, currSum);
+  public void sumToLeaf(TreeNode node, String currSum) {
+    if(node.left == null && node.right == null) {
+      totalSum += Integer.parseInt(currSum+ node.val);
+      return;
+    }
+    if(node.left != null) {
+      sumToLeaf(node.left, currSum + node.val);
+    }
+    if(node.right != null) {
+      sumToLeaf(node.right, currSum + node.val);
+    }
   }
 
   public static void main(String[] args) {
@@ -24,6 +29,6 @@ public class RootToLeafNumbers {
     root.right = new TreeNode(0);
     root.left.left = new TreeNode(5);
     root.left.right = new TreeNode(1);
-    System.out.println(Integer.toString(obj.sumNumbers(root)));
+    System.out.println(obj.sumNumbers(root));
   }
 }
