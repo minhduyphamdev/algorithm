@@ -6,6 +6,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "WiggleSortII",
+      "request": "launch",
+      "mainClass": "WiggleSortII",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "Tribonacci",
+      "request": "launch",
+      "mainClass": "Tribonacci",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "PrintInOrder",
+      "request": "launch",
+      "mainClass": "PrintInOrder",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "ImplementStackUsingQueue",
+      "request": "launch",
+      "mainClass": "ImplementStackUsingQueue",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "ImplementQueuefromStack",
+      "request": "launch",
+      "mainClass": "ImplementQueuefromStack",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "HouseRobber",
+      "request": "launch",
+      "mainClass": "HouseRobber",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "PartitionLinkedList",
+      "request": "launch",
+      "mainClass": "PartitionLinkedList",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "RunnerTechnique",
+      "request": "launch",
+      "mainClass": "RunnerTechnique",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "SearchMatrix",
+      "request": "launch",
+      "mainClass": "SearchMatrix",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "SortLinkedList",
       "request": "launch",
       "mainClass": "SortLinkedList",

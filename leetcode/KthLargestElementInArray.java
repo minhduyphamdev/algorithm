@@ -18,42 +18,41 @@ public class KthLargestElementInArray {
   }
 
   public int quickSelect(int[] nums, int left, int right, int target) {
-    if(left == right ) {
-      return nums[left];
+    if( left == right) {
+        return nums[left];
     }
 
-    int pivot = partition(nums,left,right);
+    int pivot = partition(nums, left, right);
     if(pivot == target) {
-      return nums[pivot];
+        return nums[target];
     }
+
     else if(pivot < target) {
-      return quickSelect(nums, pivot+1, right, target);
+        return quickSelect(nums,pivot+1, right, target);
     }
-    return quickSelect(nums, left, pivot-1, target);
-    
-    
+
+    return quickSelect(nums,left,pivot-1,target);
   }
 
   public int partition(int[] nums, int left, int right) {
-    int pivot = left + new Random().nextInt(right - left + 1);
+    int pivot = left + new Random().nextInt(right-left+1);
     swap(nums, pivot, right);
 
     int sortedIndex = left;
-    for(int i = left; i < right; i++) {
-      if(nums[i] < nums[right]) {
-        swap(nums,sortedIndex,i);
-        sortedIndex++;
-      }
+    for(int i=left; i<right;i++) {
+        if(nums[i] < nums[right]) { 
+            swap(nums, sortedIndex++, i);
+        }
     }
 
-    swap(nums,sortedIndex, right);
+    swap(nums, sortedIndex, right);
     return sortedIndex;
   }
 
-  private void swap(int[] nums, int i, int j) {
-    int temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
+  public void swap(int[] nums, int left, int right) {
+    int temp = nums[left];
+    nums[left] = nums[right];
+    nums[right] = temp;
   }
 
   public static void main(String[] args) {
