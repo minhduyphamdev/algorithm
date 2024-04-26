@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Stream",
+      "request": "launch",
+      "mainClass": "geekforgeeks.Stream",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "NewDatabaseStructure",
+      "request": "launch",
+      "mainClass": "geekforgeeks.NewDatabaseStructure",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "TopKFrequentElement",
+      "request": "launch",
+      "mainClass": "TopKFrequentElement",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "WiggleSortII",
       "request": "launch",
       "mainClass": "WiggleSortII",
