@@ -6,6 +6,69 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ElementAppearingMoreThan25",
+      "request": "launch",
+      "mainClass": "ElementAppearingMoreThan25",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "TranposeMatrix",
+      "request": "launch",
+      "mainClass": "TranposeMatrix",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FindRightInternal",
+      "request": "launch",
+      "mainClass": "FindRightInternal",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "NonOverlappingIntervals",
+      "request": "launch",
+      "mainClass": "NonOverlappingIntervals",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "IntegerReplacement",
+      "request": "launch",
+      "mainClass": "IntegerReplacement",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "SumOfLeftLeaves",
+      "request": "launch",
+      "mainClass": "SumOfLeftLeaves",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "ArrayStringsAreEqual",
+      "request": "launch",
+      "mainClass": "ArrayStringsAreEqual",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "ArrayTraversal",
+      "request": "launch",
+      "mainClass": "ArrayTraversal",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "HeapSort",
+      "request": "launch",
+      "mainClass": "geekforgeeks.HeapSort",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "Stream",
       "request": "launch",
       "mainClass": "geekforgeeks.Stream",
