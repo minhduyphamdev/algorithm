@@ -6,6 +6,125 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Deadlock",
+      "request": "launch",
+      "mainClass": "Deadlock",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MutualExclusion",
+      "request": "launch",
+      "mainClass": "MutualExclusion",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "KthSmallestElementInBST",
+      "request": "launch",
+      "mainClass": "KthSmallestElementInBST",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FailSafeDemo",
+      "request": "launch",
+      "mainClass": "FailSafeDemo",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FailFastDemo",
+      "request": "launch",
+      "mainClass": "FailFastDemo",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FIndAllDuplicatesInArray",
+      "request": "launch",
+      "mainClass": "FIndAllDuplicatesInArray",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MostDuplicatesArray",
+      "request": "launch",
+      "mainClass": "MostDuplicatesArray",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "Trie",
+      "request": "launch",
+      "mainClass": "Trie",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FooBar",
+      "request": "launch",
+      "mainClass": "FooBar",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MatrixGameBot",
+      "request": "launch",
+      "mainClass": "viblo.MatrixGameBot",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "SpinEvenly",
+      "request": "launch",
+      "mainClass": "viblo.SpinEvenly",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MaleBackpacker",
+      "request": "launch",
+      "mainClass": "viblo.MaleBackpacker",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MergeRoutes",
+      "request": "launch",
+      "mainClass": "viblo.MergeRoutes",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "Redistribution",
+      "request": "launch",
+      "mainClass": "viblo.Redistribution",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "SubsetSum",
+      "request": "launch",
+      "mainClass": "viblo.SubsetSum",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FindLongestAnagram",
+      "request": "launch",
+      "mainClass": "viblo.FindLongestAnagram",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "Oneforall",
+      "request": "launch",
+      "mainClass": "viblo.Oneforall",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "ElementAppearingMoreThan25",
       "request": "launch",
       "mainClass": "ElementAppearingMoreThan25",
