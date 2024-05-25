@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RecoverBinarySearchTree",
+      "request": "launch",
+      "mainClass": "RecoverBinarySearchTree",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "CoinChange",
+      "request": "launch",
+      "mainClass": "CoinChange",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MaximalSquare",
+      "request": "launch",
+      "mainClass": "MaximalSquare",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "Deadlock",
       "request": "launch",
       "mainClass": "Deadlock",
