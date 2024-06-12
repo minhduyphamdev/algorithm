@@ -1,68 +1,65 @@
 import java.util.Arrays;
 
 public class CoinChange {
+  // recursion ( time limit exceeded)
   // public int coinChange(int[] coins, int amount) {
+  //   int res = countNumOfCoins(coins, amount, 0);
+  //   return res != Integer.MAX_VALUE ? res : -1;
+  // }
+
+  // public int countNumOfCoins(int[] coins, int amount, int sum) {
   //   if(amount == 0) {
-  //     return 0;
+  //     return sum;
   //   }
 
-  //   int i = coins.length - 1;
-  //   int total = 0;
-  //   Arrays.sort(coins);
-
-  //   while(amount!=0 && i !=-1) {
-  //     int k = amount / coins[i];
-  //     amount -=k*coins[i];
-  //     total +=k;
-  //     i--;
+  //   if(amount < 0) {
+  //     return Integer.MAX_VALUE;
   //   }
 
-  //   if(amount != 0) {
-  //     return -1;
+  //   int min = Integer.MAX_VALUE;
+  //   for(int i=0;i<coins.length;i++) {
+  //     min = Math.min(min, countNumOfCoins(coins, amount - coins[i], sum+1));
   //   }
 
-  //   return total;
-  // } 
+  //   return min;
+  // }
 
-  public static int result = Integer.MAX_VALUE;
 
+  // dynamic programming
   public int coinChange(int[] coins, int amount) {
-    boolean[] visited= new boolean[coins.length+1];
-    for(int i=0;i<visited.length;i++) {
-      visited[i] = false;
-    }
-    
-    findCombination(coins, amount, visited, 0 );
-
-    if(result == Integer.MAX_VALUE) {
-      return -1;
-    }
-
-    return result;
+    int[] dp = new int[amount+1];
+    Arrays.fill(dp, -1);
+    int res = recursion(coins, amount, dp);
+    return res == Integer.MAX_VALUE ? -1 : res;
   }
 
-  public void findCombination(int[] coins, int amount, boolean[] visited, int total) {
-    if(amount == 0) {
-       result = Math.min(total, result);
+  public int recursion(int[] coins, int amount, int[] dp) {
+    if( amount == 0) 
+      return 0;
+    int res = Integer.MAX_VALUE;
+    for(int i=0;i<coins.length; i++) {
+      int temp = 0;  
+      if(amount-coins[i] >= 0) {
+            if(dp[amount-coins[i]] != -1 ) {
+                temp = dp[amount-coins[i]];
+            } 
+            else {
+               temp = recursion(coins, amount - coins[i], dp);
+            }
+
+            if(temp != Integer.MAX_VALUE) {
+              res = Math.min(res, temp +1);
+            }
+        }
     }
 
-    for(int i=0;i<coins.length;i++) {
-      if(visited[i] == false) {
-        int k = amount / coins[i];
-        amount -= k*coins[i];
-        total+=k;
-        visited[i] = true;
-        findCombination(coins, amount, visited, total);
-        visited[i] = false;
-        total-=k;
-        amount += k*coins[i];
-      }
-    }
+    dp[amount] = res;
+
+    return res;
   }
-
   public static void main(String[] args) {
+    System.out.println();
     System.out.println(new CoinChange().coinChange(new int[]{1,2,5}, 11));
-    // System.out.println(new CoinChange().coinChange(new int[]{2}, 3));
-    // System.out.println(new CoinChange().coinChange(new int[]{1}, 0));
+    // System.out.println(new CoinChange().coinChange(new int[]{186,419,83,408}, 6249));
   }
 }

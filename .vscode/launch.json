@@ -6,6 +6,111 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CourseScheduleII",
+      "request": "launch",
+      "mainClass": "CourseScheduleII",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MinimumWindowSubstring",
+      "request": "launch",
+      "mainClass": "MinimumWindowSubstring",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MaxSubArraySumCircular",
+      "request": "launch",
+      "mainClass": "MaxSubArraySumCircular",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "KadaneAlgorithm",
+      "request": "launch",
+      "mainClass": "KadaneAlgorithm",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "BitwiseAndOfARange",
+      "request": "launch",
+      "mainClass": "BitwiseAndOfARange",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "CourseSchedule",
+      "request": "launch",
+      "mainClass": "CourseSchedule",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MinWindow",
+      "request": "launch",
+      "mainClass": "MinWindow",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "ConcatenatedStrings",
+      "request": "launch",
+      "mainClass": "ConcatenatedStrings",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "SubStringWithConcatenationOfAllWords",
+      "request": "launch",
+      "mainClass": "SubStringWithConcatenationOfAllWords",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "FactorialTrailingZeros",
+      "request": "launch",
+      "mainClass": "FactorialTrailingZeros",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "EvaluateDivision",
+      "request": "launch",
+      "mainClass": "EvaluateDivision",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "SurroundedRegions",
+      "request": "launch",
+      "mainClass": "SurroundedRegions",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MinimumAbsoluteDifferentInBST",
+      "request": "launch",
+      "mainClass": "MinimumAbsoluteDifferentInBST",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "LowestCommonAncestorOfBinaryTree",
+      "request": "launch",
+      "mainClass": "LowestCommonAncestorOfBinaryTree",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "ConstructBinaryTreeFromInorderAndPostOrderTraversal",
+      "request": "launch",
+      "mainClass": "ConstructBinaryTreeFromInorderAndPostOrderTraversal",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "RecoverBinarySearchTree",
       "request": "launch",
       "mainClass": "RecoverBinarySearchTree",
