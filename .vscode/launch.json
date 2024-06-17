@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MedianFinder",
+      "request": "launch",
+      "mainClass": "MedianFinder",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MaximumTotalDamageWithSpellCasting",
+      "request": "launch",
+      "mainClass": "MaximumTotalDamageWithSpellCasting",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "CountCompleteDayPairsII",
+      "request": "launch",
+      "mainClass": "CountCompleteDayPairsII",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "CountCompleteDayPairs",
+      "request": "launch",
+      "mainClass": "CountCompleteDayPairs",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MergedSortedArray",
+      "request": "launch",
+      "mainClass": "MergedSortedArray",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "CourseScheduleII",
       "request": "launch",
       "mainClass": "CourseScheduleII",
