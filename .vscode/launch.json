@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SnakesAndLadders",
+      "request": "launch",
+      "mainClass": "SnakesAndLadders",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MedianFinder2",
+      "request": "launch",
+      "mainClass": "MedianFinder2",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "MedianFinder",
       "request": "launch",
       "mainClass": "MedianFinder",
