@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MaximumPointsAfterEnemyBattles",
+      "request": "launch",
+      "mainClass": "MaximumPointsAfterEnemyBattles",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "AlternatingGroupsI",
+      "request": "launch",
+      "mainClass": "AlternatingGroupsI",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MaximumHeightOfATriangle",
+      "request": "launch",
+      "mainClass": "MaximumHeightOfATriangle",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
+      "name": "MinimumGeneticMutation",
+      "request": "launch",
+      "mainClass": "MinimumGeneticMutation",
+      "projectName": "leetcode_59a353eb"
+    },
+    {
+      "type": "java",
       "name": "SnakesAndLadders",
       "request": "launch",
       "mainClass": "SnakesAndLadders",

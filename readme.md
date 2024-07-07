@@ -2,4 +2,4 @@
 
 ## Hope you all have a great day
 
-This is my per account just if you want to visit: https://leetcode.com/u/minhphamduy/
+This is my personal space just if you want to connect with me, I love to make new friends: https://leetcode.com/u/minhphamduy/
